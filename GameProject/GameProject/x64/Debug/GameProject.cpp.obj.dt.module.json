@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GameProject\\x64\\Debug\\GameProject.obj",
+            "outputs": [
+                "GameProject\\x64\\Debug\\GameProject.cpp.obj.dt.module.json",
+                "GameProject\\x64\\Debug\\GameProject.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

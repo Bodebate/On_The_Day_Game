@@ -9,8 +9,9 @@
 class GameLogicClass
 {
 private:
-	std::string FinalCode;
-	const std::string CodeOptions[4] ={"Belgium_Campus_Is_Awsome","Information_Technology_Is_The_Future,Belgium_Campus_ITversity","The_Future_Is_Code"};
+	std::string FinalMorseCode;
+	std::string FinalCypherCode;
+	const std::string CodeOptions[5] ={"Belgium_Campus_Is_Awsome","Information_Technology_Is_The_Future","Belgium_Campus_ITversity","The_Future_Is_Code","It's The Way We're Wired"};
 	const std::string MoseCode[26] = { ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.." };
 
 	int Random(int Lower, int Upper) {
@@ -21,8 +22,10 @@ private:
 	}
 
 	void SelectCode() {
-		FinalCode = CodeOptions[Random(0,3)];
-		
+		int RandomIndex = Random(0, 4);
+		FinalMorseCode = CodeOptions[RandomIndex];
+		FinalCypherCode = CodeOptions[RandomIndex+1];
+
 		return;
 	}
 
@@ -35,8 +38,8 @@ public:
 		SelectCode();
 	}
 
-	bool CheckCode(std::string TestString) {
-		if (TestString == FinalCode) {
+	bool CheckMorseCode(std::string TestString) {
+		if (TestString == FinalMorseCode) {
 			return true;
 		}else
 		{
@@ -63,7 +66,7 @@ public:
 		return outString;
 	}
 
-	std::string GetMorseCode() { return GenerateMorseCode(FinalCode); }
+	std::string GetMorseCode() { return GenerateMorseCode(FinalMorseCode); }
 
 };
 

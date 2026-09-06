@@ -267,7 +267,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 std::string standardInput = WStringToString(userInputText);
 
                 // 2. Evaluate using your custom class logic function
-                if (MyClass.CheckCode(standardInput))
+                if (MyClass.CheckMorseCode(standardInput))
                 {
                     boxDisplayText = L"SUCCESS!\nCRACK COMPLETED.\nMAIN SYSTEM UNLOCKED.";
                 }
