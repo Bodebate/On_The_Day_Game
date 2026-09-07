@@ -1,10 +1,9 @@
-﻿  GameLogicClass.cpp
-  GameProject.cpp
+﻿  GameProject.cpp
 C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18): warning C4244: '=': conversion from 'const wchar_t' to 'char', possible loss of data
   (compiling source file 'GameProject.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18):
       the template instantiation context (the oldest one first) is
-          C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\GameProject.cpp(80,23):
+          C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\GameProject.cpp(97,23):
           see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
           with
           [
@@ -12,7 +11,7 @@ C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\
               _Iter=std::_String_const_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
               _Alloc=std::allocator<char>
           ]
-              C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\GameProject.cpp(80,5):
+              C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\GameProject.cpp(97,5):
               see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'WStringToString'
           C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(862,17):
           see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<const wchar_t*,const wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
@@ -33,18 +32,9 @@ C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\
               _SizeTy=unsigned __int64
           ]
   
-  PythonEnvironment.cpp
-C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\PythonEnvironment.h(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'PythonEnvironment.cpp')
-  
-C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\PythonEnvironment.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'PythonEnvironment.cpp')
-  
-C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\PythonEnvironment.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'PythonEnvironment.cpp')
-  
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 295 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  4 of 221 functions ( 1.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   GameProject.vcxproj -> C:\Users\liamd\Documents\Belgium campus\Third Year\PRJ381\Game For Proj\Game for open day atmpt 2\On_The_Day_Game\GameProject\x64\Release\GameProject.exe

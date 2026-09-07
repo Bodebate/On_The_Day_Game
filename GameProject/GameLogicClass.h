@@ -1,4 +1,5 @@
 #pragma once
+#define PY_SSIZE_T_CLEAN
 #include <string>
 #include <random>
 #include <cctype>
@@ -66,7 +67,29 @@ public:
 		return outString;
 	}
 
+
 	std::string GetMorseCode() { return GenerateMorseCode(FinalMorseCode); }
 
+	static std::string rot13(const std::string& s) { 
+		std::string out = s; 
+		for (char& c : out) 
+		{ 
+			if (c >= 'a' && c <= 'z') c = char('a' + (c - 'a' + 13) % 26); 
+			else if (c >= 'A' && c <= 'Z') c = char('A' + (c - 'A' + 13) % 26); 
+		} 
+		return out; 
+	}
+
+	std::string GetCypherCode() { return rot13(FinalCypherCode); }
+
+	bool CheckCypherCode(std::string TestString) {
+		if (TestString == FinalCypherCode) {
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 };
 

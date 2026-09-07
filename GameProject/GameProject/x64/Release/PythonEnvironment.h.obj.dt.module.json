@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GameProject\\x64\\Release\\PythonEnvironment.obj",
+            "outputs": [
+                "GameProject\\x64\\Release\\PythonEnvironment.h.obj.dt.module.json",
+                "GameProject\\x64\\Release\\PythonEnvironment.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
