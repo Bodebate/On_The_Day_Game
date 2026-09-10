@@ -7,16 +7,15 @@
       "RelativeMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|solutionrelative:GameProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\HomeImage.bmp||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|solutionrelative:HomeImage.bmp||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\GameLogicClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|solutionrelative:GameLogicClass.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\PythonEnvironment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|solutionrelative:PythonEnvironment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B3C8FA-C8B9-45BE-9E20-A28509E7E463}|GameProject.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\18\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.51.36231\\INCLUDE\\XUTILITY||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -91,37 +90,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeImage.bmp",
-              "DocumentMoniker": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\HomeImage.bmp",
-              "RelativeDocumentMoniker": "HomeImage.bmp",
-              "ToolTip": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\HomeImage.bmp",
-              "RelativeToolTip": "HomeImage.bmp",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2026-09-07T00:34:33.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PythonEnvironment.h",
-              "DocumentMoniker": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\PythonEnvironment.h",
-              "RelativeDocumentMoniker": "PythonEnvironment.h",
-              "ToolTip": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\PythonEnvironment.h",
-              "RelativeToolTip": "PythonEnvironment.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-06T18:37:37.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "GameLogicClass.h",
               "DocumentMoniker": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\GameLogicClass.h",
               "RelativeDocumentMoniker": "GameLogicClass.h",
               "ToolTip": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\GameLogicClass.h",
               "RelativeToolTip": "GameLogicClass.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAowKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-09-06T18:37:37.358Z",
               "EditorCaption": ""
@@ -134,9 +108,35 @@
               "RelativeDocumentMoniker": "GameProject.cpp",
               "ToolTip": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\GameProject.cpp",
               "RelativeToolTip": "GameProject.cpp",
-              "ViewState": "AgIAAI0BAAAAAAAAAAAAwKcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAmwHoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-06T18:37:37.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PythonEnvironment.h",
+              "DocumentMoniker": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\PythonEnvironment.h",
+              "RelativeDocumentMoniker": "PythonEnvironment.h",
+              "ToolTip": "C:\\Users\\liamd\\Documents\\Belgium campus\\Third Year\\PRJ381\\Game For Proj\\Game for open day atmpt 2\\On_The_Day_Game\\GameProject\\PythonEnvironment.h",
+              "RelativeToolTip": "PythonEnvironment.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-06T18:37:37.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "xutility",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\xutility",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\xutility",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\xutility",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include\\xutility",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOATAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-07T07:56:11.723Z",
               "EditorCaption": ""
             }
           ]

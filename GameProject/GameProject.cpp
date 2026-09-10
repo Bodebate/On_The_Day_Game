@@ -4,6 +4,7 @@
 #include "framework.h"
 #include "GameProject.h"
 #include "GameLogicClass.h"
+#include "PythonEnvironment.h"
 #include <string>
 #include <algorithm>
 
@@ -175,7 +176,7 @@ void DrawInputBox(HDC hdc, int windowWidth, int windowHeight)
         SetBkMode(hdc, TRANSPARENT);
 
         // 5. Select a retro system font built into Windows
-        HFONT hFont = CreateFontW(20, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE,
+        HFONT hFont = CreateFontW(12, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE,
             ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
             DEFAULT_QUALITY, FIXED_PITCH | FF_MODERN, L"Courier New");
         HFONT hOldFont = (HFONT)SelectObject(hdc, hFont);
@@ -220,7 +221,7 @@ void DrawInfoBox(HDC hdc, int windowWidth, int windowHeight)
         SetBkMode(hdc, TRANSPARENT);
 
         // 5. Select a retro system font built into Windows
-        HFONT hFont = CreateFontW(20, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE,
+        HFONT hFont = CreateFontW(12, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE,
             ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
             DEFAULT_QUALITY, FIXED_PITCH | FF_MODERN, L"Courier New");
         HFONT hOldFont = (HFONT)SelectObject(hdc, hFont);
@@ -351,6 +352,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 // Handle Morse Code Box click
 				hActiveBmp = hBmpMorse;
                 UserInputDisplayText = L"#Add your code here:\n#Use the examples on the left to help you\n\n";
+				infoBoxDisplayText = StringToWString( MyClass.GetUserInfoMorseCode());
 
                 bIsOnMainMenu = false;
                 bShowInfoBox = true;
@@ -362,6 +364,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
                 hActiveBmp = hBmpCypher;
                 UserInputDisplayText = L"#Add your code here:\n#Use the examples on the left to help you\n\n";
+				infoBoxDisplayText = StringToWString(MyClass.GetUserInfoCypherCode());
+
                 bIsOnMainMenu = false;
                 bShowInfoBox = true;
                 bShowInputBox = true;
@@ -372,6 +376,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
                 hActiveBmp = hBmpAlgorithm;
                 UserInputDisplayText = L"Use the space below to help you figure out your solution to the challenge:\n\n";
+
+
                 bIsOnMainMenu = false;
                 bShowInfoBox = true;
                 bShowInputBox = true;
@@ -379,7 +385,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             else if (mouseX >= SolveBox[0] && mouseY >= SolveBox[1] && mouseX <= SolveBox[2] && mouseY <= SolveBox[3])
             {
                 // Handle Solve Box click
-                
+                   
             }
 
         }
@@ -415,7 +421,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 if (!userInputText.empty()) {
                     userInputText.pop_back();
                 }
-                boxDisplayText = L"ACCESS GRANTED.\nENTER OVERRIDE CRYPTO-KEY:\n> " + userInputText;
+                UserInputDisplayText = L"#Add your code here : \n#Use the examples on the left to help you\n\n" + userInputText;
             }
             else if (ch == L'\r' || ch == L'\n') // USER PRESSES ENTER KEY
             {
@@ -423,20 +429,20 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 std::string standardInput = WStringToString(userInputText);
 
                 // 2. Evaluate using your custom class logic function
-                if (MyClass.CheckMorseCode(standardInput))
-                {
-                    boxDisplayText = L"SUCCESS!\nCRACK COMPLETED.\nMAIN SYSTEM UNLOCKED.";
+				PythonEnvironment Py = PythonEnvironment();
+                std::string out =Py.ExecutePythonScript(WStringToString(userInputText));
+                if (hActiveBmp == hBmpMorse) {
+                    infoBoxDisplayText = StringToWString(MyClass.GetUserInfoMorseCode()) + L"\n Output:" + StringToWString(out);
                 }
-                else
-                {
-                    boxDisplayText = L"INVALID CRYPTO-KEY.\nINTRUDER ALERT TRIGGERED.\nTRY AGAIN:\n> ";
-                    userInputText = L""; // Wipe user line to let them retype
+                else if (hActiveBmp == hBmpCypher) {
+                    infoBoxDisplayText = StringToWString(MyClass.GetUserInfoCypherCode()) + L"\n Output:" + StringToWString(out);
                 }
+
             }
             else if (ch >= 32) // Standard character append rule
             {
                 userInputText += ch;
-                boxDisplayText = L"ACCESS GRANTED.\nENTER OVERRIDE CRYPTO-KEY:\n> " + userInputText;
+                UserInputDisplayText = L"#Add your code here : \n#Use the examples on the left to help you\n\n" + userInputText;
             }
 
             // Instantly notify windows loop to paint text adjustments

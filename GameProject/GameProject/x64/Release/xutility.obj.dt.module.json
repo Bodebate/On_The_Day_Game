@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "GameProject\\x64\\Release\\xutility.obj",
+            "outputs": [
+                "GameProject\\x64\\Release\\xutility.obj.dt.module.json",
+                "GameProject\\x64\\Release\\xutility.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
